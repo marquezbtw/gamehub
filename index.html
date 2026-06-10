@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>GamesHub</title>
+
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">GamesHub</h1>
+        
+        <div>
+            <input class="searchInput" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="search-btn">Search</button>
+        </div>
+        
+    </header>
+    <main class="main-container">
+        <aside class="sidebar">
+            <div>
+                <h2>Generos</h2>
+                <section class="genres-list"></section>
+                <button class="btn-show-genres"></button>
+            </div>
+            <div class="platforms-container">
+                <h2>Plataformas</h2>
+                <ul class="platforms-list"></ul>
+                <button class="btn-show-platforms"></button>
+            </div>
+        </aside>
+
+        <section class="content">
+            <section class="games-list">
+                <article class="games"></article>
+            </section>
+
+            <section id="games-detail" class="games-detail-container inactive">
+                <img class="game-detail-img" />
+                <h1 class="game-detail-title"></h1>
+                <span class="game-detail-score"></span>
+                <p class="game-detail-description"></p>
+            </section>
+
+            <section class="genres-container">
+            </section>
+
+        </section>
+    </main>
+
+    
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./src/secrets.js"></script>
+    <script src="./src/nodes.js"></script>
+    <script src="./src/main.js"></script>
+    <script src="./src/navigation.js"></script>
+</body>
+</html>
